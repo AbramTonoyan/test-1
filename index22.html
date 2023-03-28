@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style22.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/segoe-ui-4?styles=18003"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-size: 62.5%;
+      background-color: #fafbfc;
+    }
+    header {
+      background-color: white;
+      width: 100%;
+      height: 6.2rem;
+      box-shadow: 0px 3px 26px #283c6714;
+    }
+    
+    .header-inp {
+      display: none;
+    }
+    .header-inp-div {
+      display: none;
+    }
+    .margin-auto {
+      width: 131.6rem;
+      margin: auto;
+      background-color: white;
+    }
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      height: 6.1rem;
+    }
+    
+    /* header-part-1 */
+    .header-part-1 {
+      display: flex;
+      gap: 3rem;
+      padding: 1.9rem;
+    }
+    
+    .header-svg-1 {
+      padding: 0.2rem;
+    }
+    
+    .header-part-2 {
+      width: 16.6rem;
+      height: 3.4rem;
+      margin-top: 1.4rem;
+    }
+    .header-part-2 > img {
+      width: 100%;
+      height: 100%;
+    }
+    
+    /* header-part-3 */
+    
+    .header-svg-size-1 {
+      width: 2rem;
+      height: 2rem;
+    }
+    
+    .header-svg-size-2 {
+      width: 1.33rem;
+      height: 2rem;
+    }
+    .header-svg-size-3 {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+    .img-size {
+      width: 100%;
+      height: 100%;
+    }
+    .part-3-ul {
+      list-style: none;
+      text-decoration: none;
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+    
+    .header-li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-distance-1 {
+      margin-left: 4.8rem;
+    }
+    
+    .header-distance-2 {
+      margin-left: 3.6rem;
+      margin-right: 1.5rem;
+    }
+    
+    .header-distance-3 {
+      margin-right: 3.5rem;
+    }
+    
+    .header-p {
+      font-size: 1.5rem;
+      font-family: "Segoe UI", sans-serif;
+      color: #404040;
+      opacity: 1;
+    }
+    
+    @media screen and (max-width: 1340px) {
+      .margin-auto {
+        width: 131.6rem;
+        min-width: 10%;
+        max-width: 100%;
+        margin: 0;
+      }
+    
+      .header-flex {
+        justify-content: space-between;
+      }
+      .header-part-3 {
+        padding: 0 2rem;
+      }
+    }
+    
+    @media screen and (max-width: 730px) {
+      .header-part-2 {
+        display: none;
+      }
+    }
+    
+    @media screen and (max-width: 500px) {
+      .margin-auto {
+        width: 50.6rem;
+        min-width: 20%;
+        max-width: 100%;
+        margin: 0;
+      }
+    
+      .header-flex {
+        flex-direction: column;
+      }
+      .header-li {
+        flex-grow: 1;
+      }
+      .part-3-ul {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        min-width: 35rem;
+        background-color: white;
+        margin-top: 1rem;
+      }
+      .header-part-3 {
+        background-color: white;
+      }
+    
+      .header-part-1 {
+        padding: 1rem 0 0 0.2rem;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    
+      .header-inp-div {
+        gap: 1rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .logo-div {
+        margin: 0 0.5rem;
+      }
+    
+      .header-inp {
+        width: 100%;
+        min-width: 20%;
+        max-width: 80%;
+        display: block;
+        padding: 1rem;
+        border: #3cb4e7 1px solid;
+        border-radius: 1rem;
+      }
+    
+      .header-distance-1 {
+        margin-left: 2.4rem;
+      }
+      .header-distance-2 {
+        margin-left: 1.8rem;
+        flex-grow: 1;
+        flex-shrink: 2;
+      }
+      .header-distance-3 {
+        margin-right: 3.5rem;
+      }
+      .logo-div {
+        width: 3rem;
+        height: 5rem;
+      }
+    }
+    
+    /* Navigation */
+    .nav {
+      max-width: 136.4rem;
+      margin: auto;
+      background-color: #ffffff;
+      height: 6rem;
+      border-radius: 0 0 1.5rem 1.5rem;
+      box-shadow: 0px 3px 26px #283c6714;
+      padding: 0 2.4rem;
+      display: flex;
+      justify-content: space-between;
+      margin-top: -1px;
+    }
+    
+    .nav-ul {
+      display: flex;
+      list-style: none;
+      gap: 4rem;
+      padding: 1.6rem 0 2.3rem 0;
+    }
+    
+    .nav-li {
+      font-family: "Segoe UI", sans-serif;
+      font-size: 16px;
+      letter-spacing: 0px;
+      color: #404040;
+      opacity: 0.7;
+    }
+    
+    .mouse:hover {
+      opacity: 1;
+      font: bold;
+      cursor: pointer;
+    }
+    
+    .nav-select-div {
+      padding: 1.4rem 0;
+    }
+    
+    .nav-select {
+      width: 6.2rem;
+      height: 3.2rem;
+      border: 1px solid #e9ebef;
+      border-radius: 4px;
+    }
+    
+    @media screen and (max-width: 900px) {
+      .nav-ul {
+        overflow: auto;
+      }
+    }
+    
+    @media screen and (max-width: 500px) {
+      .nav {
+        margin-top: 4.8rem;
+        gap: 1rem;
+      }
+    }
+    
+    /* main */
+    .margin-auto-1 {
+      width: 136.4rem;
+      margin: auto;
+    }
+    /* section-1 first-chapter */
+    .section-1 {
+      margin-top: 4rem;
+    }
+    
+    .first-chapter {
+      display: flex;
+      width: 100%;
+      gap: 2.4rem;
+    }
+    
+    .first-chapter-child-1 {
+      display: flex;
+      flex-direction: column;
+      width: 74.8rem;
+      gap: 1.6rem;
+    }
+    
+    .first-part-1 {
+      width: 74.8rem;
+      height: 69.6rem;
+      padding: 2.5rem;
+      padding-bottom: 1.5rem;
+      background-color: white;
+      box-shadow: 0px 0px 6px #2a3b5d1a;
+      border-radius: 4px;
+    }
+    
+    .first-img-size {
+      width: 100%;
+      height: 49.8rem;
+      background-image: url(./image/ryan-ancill-aJYO8JmVodY-unsplash2x.png);
+      background-size: cover;
+      opacity: 1;
+      border-radius: 4px;
+    }
+    
+    .image-bio {
+      margin-top: 1.4rem;
+    }
+    
+    .first-chapter-h1 {
+      font-family: "Segoe UI", sans-serif;
+      font-size: 32px;
+      letter-spacing: -0.19px;
+      color: #404040;
+      opacity: 1;
+      width: 60.9rem;
+    }
+    .image-bio-flex-1 {
+      display: flex;
+      gap: 1.6rem;
+      align-items: center;
+    }
+    
+    .margin-top-09 {
+      margin-top: 0.9rem;
+    }
+    .margin-top-16 {
+      margin-top: 1.6rem;
+    }
+    
+    .image-bio-p-1 {
+      font-family: "Segoe UI", sans-serif;
+      font-size: 14px;
+      color: #404040;
+      opacity: 0.7;
+    }
+    
+    .image-bio-p-2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      letter-spacing: 0px;
+      color: #404040;
+      opacity: 1;
+    }
+    
+    .image-bio-p-3 {
+      font: normal normal bold 12px/16px Segoe UI;
+      font-family: "Montserrat", sans-serif;
+      color: #404040;
+      opacity: 1;
+    }
+    
+    .ron-icon {
+      width: 2.4rem;
+      height: 2.4rem;
+      background-size: cover;
+      border-radius: 5px;
+    }
+    .icon-border {
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .first-part-2 {
+      padding: 1.6rem 2.4rem;
+      width: 100%;
+      height: 13.3rem;
+      background-color: white;
+      box-shadow: 0px 0px 6px #2a3b5d1a;
+      border-radius: 4px;
+      display: flex;
+    }
+    
+    .part-2-h3 {
+      font: normal normal bold 18px/22px Segoe UI;
+      font-family: "Segoe UI", sans-serif;
+      width: 326px;
+      letter-spacing: 0px;
+      color: #404040;
+      opacity: 1;
+    }
+    .margin-right-border {
+      padding-right: 16px;
+      border-right: 1px solid #e9ebee;
+      margin-right: 1.6rem;
+    }
+    
+    .size-12 {
+      font-size: 12px;
+    }
+    
+    .first-chapter-child-2 {
+      width: 58.9rem;
+      height: 84.5rem;
+      background-color: white;
+      padding: 3.2rem 2.4rem;
+      padding-bottom: 0;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 0px 6px #2a3b5d1a;
+      border-radius: 4px;
+      opacity: 1;
+    }
+    
+    .div-span {
+      border-bottom: 2px solid black;
+      padding-bottom: 0.8rem;
+      margin-bottom: 3.2rem;
+      width: 16.3rem;
+    }
+    
+    .child-2-span {
+      font: normal normal bold 23px/33px Helvetica Neue;
+      letter-spacing: 0px;
+      color: #000000;
+      opacity: 1;
+    }
+    
+    .child-2-grid {
+      width: 100%;
+      display: grid;
+      gap: 3rem;
+      grid-template-rows: repeat(5, 1fr);
+    }
+    
+    .child-2-grid-boxes {
+      display: flex;
+      gap: 1.6rem;
+      height: 12.1rem;
+    }
+    
+    .grid-img-size {
+      width: 6.7rem;
+      height: 6.7rem;
+    }
+    
+    .child-2-grid-bio {
+      width: 45.8rem;
+    }
+    .grid-flex-line {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .grid-flex-line-h3 {
+      font-family: "Segoe UI", sans-serif;
+      font-size: 16px;
+      letter-spacing: 0px;
+      color: #404040;
+      opacity: 1;
+    }
+    
+    .grid-flex-line-p {
+      font-family: "Segoe UI", sans-serif;
+      font-size: 12px;
+      letter-spacing: 0px;
+      color: #3b3b3b;
+      opacity: 0.5;
+    }
+    
+    .grid-flex-p {
+      font-size: 1.6rem;
+      font-family: "Segoe UI", sans-serif;
+      letter-spacing: 0px;
+      color: #000000;
+      opacity: 0.7;
+    }
+    
+    .grid-flex-p-1 {
+      font-family: "Segoe UI", sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: 0px;
+      color: #3b3b3b;
+      opacity: 0.5;
+    }
+    
+    .arrow-div {
+      width: 1.3rem;
+      height: 1rem;
+    }
+    
+    .grid-flex-line-flex {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+    }
+    
+    .padding-border {
+      border-bottom: 1px solid #e9ebee;
+    }
+    
+    .marign-top-7 {
+      margin-top: 0.7rem;
+    }
+    
+    @media screen and (max-width: 1370px) {
+      .margin-auto-1 {
+        width: 136.6rem;
+        min-width: 10%;
+        max-width: 100%;
+      }
+      .first-chapter {
+        min-width: 10%;
+        max-width: 100%;
+      }
+      .first-chapter-child-2 {
+        min-width: 10rem;
+        max-width: 90%;
+      }
+      .child-2-grid {
+        min-width: 10%;
+        max-width: 100%;
+      }
+      .child-2-grid-boxes {
+        min-width: 10%;
+        max-width: 100%;
+      }
+      .grid-img-size {
+        max-width: 6.7rem;
+        max-height: 6.7rem;
+      }
+      .first-chapter-child-1 {
+        min-width: 10%;
+        max-width: 90%;
+      }
+      .first-part-1 {
+        width: 100%;
+      }
+      .first-part-2 {
+        width: 100%;
+      }
+      .first-part-2-childs {
+        width: 100%;
+      }
+      .part-2-h3 {
+        width: 100%;
+      }
+      .first-chapter-h1 {
+        width: 100%;
+      }
+    }
+    
+    @media screen and (max-width: 1060px) {
+      .first-chapter {
+        flex-direction: column;
+      }
+      .first-chapter-child-1 {
+        width: 106rem;
+        min-width: 10%;
+        max-width: 100%;
+      }
+      .first-part-1 {
+        width: 106rem;
+        min-width: 10%;
+        max-width: 100%;
+      }
+      .grid-img-size {
+        max-width: 6rem;
+        max-height: 6rem;
+      }
+      .first-chapter-child-2 {
+        width: 104rem;
+        min-width: 10%;
+        max-width: 100%;
+      }
+      .child-2-grid-boxes {
+        width: 100%;
+      }
+      .child-2-grid-bio {
+        flex-grow: 1;
+      }
+      .first-chapter-h1 {
+        font-size: 2.4rem;
+      }
+      .first-img-size {
+        width: 104rem;
+        min-width: 30%;
+        max-width: 100%;
+      }
+    }
+    
+    @media screen and (max-width: 500px) {
+      .first-chapter-h1 {
+        font-size: 20px;
+      }
+      .part-2-h3 {
+        font-size: 12px;
+      }
+      .first-part-2 {
+        height: 100%;
+      }
+      .grid-img-size {
+        max-width: 5rem;
+        max-height: 5rem;
+      }
+      .nav-select {
+        font-size: 16px;
+        opacity: 0.9;
+      }
+      .nav-select-div {
+        padding: 1.3rem 0;
+        padding-bottom: 1.7rem;
+      }
+      .nav {
+        padding: 0 1.2rem;
+      }
+      .first-part-2 {
+        padding: 1rem 1.6rem;
+      }
+    }
+    
+    /* section-2 */
+    
+    .section-2 {
+      margin-top: 5.6rem;
+    }
+    
+    .sec-2-h1 {
+      font-family: "Segoe UI", sans-serif;
+      font: normal normal bold 36px/48px Segoe UI;
+      letter-spacing: 0px;
+      color: #404040;
+      opacity: 1;
+    }
+    
+    .sec-2-grid {
+      margin-top: 2.4rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      /* grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); */
+      grid-gap: 1.46rem;
+      height: 28rem;
+    }
+    
+    .section-2-boxes {
+      padding-left: 1.6rem;
+      padding-bottom: 1.6rem;
+      width: 100%;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
+    
+    .sec-2-box-1 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(36, 42, 54, 0.6),
+          rgba(36, 42, 54, 0.6)
+        ),
+        url(./image/dan-schiumarini-dcL8ESbsGis-unsplash@2x.png);
+    }
+    
+    .sec-2-box-2 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(36, 42, 54, 0.6),
+          rgba(36, 42, 54, 0.6)
+        ),
+        url(./image/austin-distel-rxpThOwuVgE-unsplash@2x.png);
+    }
+    .sec-2-box-3 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(36, 42, 54, 0.6),
+          rgba(36, 42, 54, 0.6)
+        ),
+        url(./image/bruce-mars-AndE50aaHn4-unsplash@2x.png);
+    }
+    .sec-2-box-4 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(36, 42, 54, 0.6),
+          rgba(36, 42, 54, 0.6)
+        ),
+        url(./image/brooke-cagle-g1Kr4Ozfoac-unsplash@2x.png);
+    }
+    
+    .flex-line {
+      margin-top: 0.6rem;
+      display: flex;
+      gap: 1.6rem;
+    }
+    
+    .sec-2-h3 {
+      font: normal normal bold 20px/22px Segoe UI;
+      letter-spacing: 0px;
+      color: #ffffff;
+      opacity: 1;
+    }
+    
+    .sec-2-p-1 {
+      font: normal normal normal 12px/16px Segoe UI;
+      letter-spacing: 0px;
+      color: #ffffff;
+      opacity: 0.7;
+    }
+    
+    .sec-2-p-2 {
+      font: normal normal bold 12px/16px Segoe UI;
+      letter-spacing: 0px;
+      color: #ffffff;
+      opacity: 1;
+    }
+    
+    @media screen and (max-width: 1370px) {
+      /* .sec-2-grid {
+        padding: 0 2rem;
+      }
+      .sec-2-h1 {
+        padding: 0 2rem;
+      } */
+      .section-2 {
+        padding: 0 2rem;
+      }
+    }
+    
+    @media screen and (max-width: 1060px) {
+      .section-2-boxes {
+        height: 36rem;
+      }
+      .sec-2-grid {
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+    }
+    
+    /* section-3 */
+    .section-3 {
+      margin-top: 12.5rem;
+    }
+    
+    .sec-3-h3 {
+      font: normal normal bold 36px/48px Segoe UI;
+      letter-spacing: -0.22px;
+      color: #101010;
+      opacity: 1;
+    }
+    
+    .sec-3-div {
+      margin-top: 3.4rem;
+      display: flex;
+      gap: 2.4rem;
+    }
+    
+    .sec-3-childs {
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 12px 30px #2a3b5d2e;
+      border-radius: 4px;
+      opacity: 1;
+      padding: 1.6rem 1.6rem 2.4rem 1.6rem;
+      width: 66.6rem;
+      height: 73.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.2rem;
+    }
+    
+    .sec-3-img {
+      width: 100%;
+      max-height: 37rem;
+    }
+    
+    .sec-3-icon-per {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+    
+    .sec-3-flex-line {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .sec-3-p {
+      font: normal normal bold 12px/16px Segoe UI;
+      letter-spacing: 0px;
+      color: #404040;
+      opacity: 1;
+    }
+    
+    .sec-3-p-1 {
+      font: normal normal normal 14px/19px Segoe UI;
+      letter-spacing: 0px;
+      color: #404040;
+      opacity: 0.7;
+    }
+    .sec-3-p-2 {
+      margin-left: 2.4rem;
+      font: normal normal bold 14px/19px Segoe UI;
+      letter-spacing: 0px;
+      color: #404040;
+      opacity: 1;
+    }
+    
+    .sec-3-flex-line-1 {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+    }
+    
+    .sec-3-h2 {
+      margin-top: 0.8rem;
+      font: normal normal bold 24px/26px Segoe UI;
+      letter-spacing: 0px;
+      color: #3b3b3b;
+      opacity: 1;
+    }
+    
+    .sec-2-p-3 {
+      margin-top: 0.8rem;
+      font: normal normal normal 16px/22px Segoe UI;
+      letter-spacing: 0px;
+      color: #000000;
+      opacity: 0.7;
+    }
+    
+    .sec-3-flex-bio {
+      margin-top: 2.4rem;
+      display: flex;
+      gap: 1.4rem;
+      height: 9.3rem;
+    }
+    
+    .sec-3-bio-child {
+      padding: 1.9rem 1.6rem 1.8rem 2.4rem;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #e9ebef;
+      border-radius: 24px;
+      opacity: 1;
+      width: 100%;
+      height: 9.3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .sec-3-bio-p {
+      font: normal normal bold 26px/23px Montserrat;
+      letter-spacing: 0px;
+      color: #1d2129;
+      opacity: 1;
+    }
+    
+    .sec-3-bio_p {
+      font: 18px Segoe UI;
+    
+      letter-spacing: 0px;
+      color: #1d2129;
+    
+      opacity: 1;
+    }
+    
+    .sec-3--img {
+      width: 4.1rem;
+      height: 3.3rem;
+    }
+    
+    .sec-3---img {
+      width: 4.3rem;
+      height: 3.6rem;
+    }
+    
+    .border-rad-4 {
+      border-radius: 4px;
+    }
+    
+    @media screen and (max-width: 970px) {
+      .sec-3-bio-p {
+        font-size: 20px;
+      }
+      .sec-3-h2 {
+        font-size: 19px;
+      }
+      .sec-3-bio-child {
+        flex-direction: column;
+        height: 20rem;
+    
+        max-height: 16rem;
+      }
+      .section-3 {
+        padding: 0 2rem;
+      }
+    }
+    
+    @media screen and (max-width: 610px) {
+      .sec-2-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+      }
+      .section-2-boxes {
+        width: 100%;
+      }
+      .sec-3-div {
+        flex-direction: column;
+      }
+      .sec-3-childs {
+        width: 100%;
+        height: auto;
+      }
+      .sec-3-bio-child {
+        flex-direction: row;
+        height: auto;
+      }
+      .sec-3-bio_p {
+        font-size: 12px;
+      }
+      .sec-3-bio-p {
+        font-size: 15px;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="margin-auto">
+        <div class="header-flex">
+          <div class="header-part-1">
+            <div class="header-svg-1 mouse">
+              <img src="./svg/menu.svg" alt="" />
+            </div>
+            <div class="header-svg-2 mouse">
+              <img src="./svg/loupe.svg" alt="" />
+            </div>
+            <div class="header-inp-div">
+              <input
+                class="header-inp"
+                type="search"
+                placeholder="Serach in  Page"
+              />
+              <div class="logo-div">
+                <img
+                  class="img-size mouse"
+                  src="./image/Persona_logo-01.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="header-part-2">
+            <img src="./svg/logo-persona.svg" alt="" />
+          </div>
+
+          <div class="header-part-3">
+            <ul class="part-3-ul">
+              <li class="header-li mouse">
+                <div class="header-svg-size-1">
+                  <img class="img-size" src="./svg/home.svg" alt="" />
+                </div>
+                <p class="header-p">Home</p>
+              </li>
+              <li class="header-li mouse header-distance-1">
+                <div class="header-svg-size-1">
+                  <img class="img-size" src="./svg/play.svg" alt="" />
+                </div>
+                <p class="header-p">Watch</p>
+              </li>
+              <li class="header-li mouse header-distance-2">
+                <div class="header-svg-size-2">
+                  <img
+                    class="img-size"
+                    src="./svg/microphone-black-shape.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="header-p">Newsletter</p>
+              </li>
+              <li class="header-li mouse header-distance-3">
+                <div class="header-svg-size-1">
+                  <img class="img-size" src="./svg/Union 1.svg" alt="" />
+                </div>
+                <p class="header-p">Daily News</p>
+              </li>
+              <li class="header-li mouse">
+                <div class="header-svg-size-3">
+                  <img
+                    class="img-size"
+                    src="./svg/rss_feed_black_24dp.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="header-p">Rss</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <ul class="nav-ul">
+        <li class="nav-li mouse">Armenia</li>
+        <li class="nav-li mouse">World</li>
+        <li class="nav-li mouse">Sport</li>
+        <li class="nav-li mouse">Entertainment</li>
+        <li class="nav-li mouse">Medical</li>
+        <li class="nav-li mouse">World</li>
+        <li class="nav-li mouse">Sport</li>
+        <li class="nav-li mouse">Entertainment</li>
+      </ul>
+
+      <div class="nav-select-div">
+        <select class="nav-select" name="" id="">
+          <option value="">Arm</option>
+          <option value="">Handznem menak</option>
+        </select>
+      </div>
+    </nav>
+    <main class="main margin-auto-1">
+      <section class="section-1">
+        <div class="first-chapter">
+          <div class="first-chapter-child-1">
+            <div class="first-part-1">
+              <div class="first-img-size"></div>
+              <div class="image-bio">
+                <h1 class="first-chapter-h1">
+                  Biden administration to warn businesses about risks of
+                  operating
+                </h1>
+                <div class="image-bio-flex-1 margin-top-09">
+                  <p class="image-bio-p-1">Jul 9, 2021,12:00am</p>
+                  <p class="image-bio-p-2">Political</p>
+                  <p class="image-bio-p-1">12 322 reading now</p>
+                </div>
+                <div class="image-bio-flex-1 margin-top-16">
+                  <div class="ron-icon">
+                    <img
+                      class="img-size icon-border"
+                      src="./image/mitchell-luo-ymo_yC_N_2o-unsplash2x.png"
+                      alt=""
+                    />
+                  </div>
+                  <p class="image-bio-p-3">Ron Gluckman</p>
+                </div>
+              </div>
+            </div>
+            <div class="first-part-2">
+              <div class="first-part-2-childs margin-right-border">
+                <div class="image-bio-flex-1">
+                  <div class="ron-icon">
+                    <img
+                      class="img-size icon-border"
+                      src="./image/mitchell-luo-ymo_yC_N_2o-unsplash2x.png"
+                      alt=""
+                    />
+                  </div>
+                  <p class="image-bio-p-3">Ron Gluckman</p>
+                </div>
+                <h3 class="part-2-h3">
+                  Didi Faces Cybersecurity Investigation By Seven
+                </h3>
+                <div class="image-bio-flex-1 margin-top-09">
+                  <p class="image-bio-p-1 size-12">5 min ago</p>
+                  <p class="image-bio-p-2 size-12">Political</p>
+                  <p class="image-bio-p-1 size-12">Economic</p>
+                </div>
+              </div>
+              <div class="first-part-2-childs">
+                <div class="image-bio-flex-1">
+                  <div class="ron-icon">
+                    <img
+                      class="img-size icon-border"
+                      src="./image/mitchell-luo-ymo_yC_N_2o-unsplash2x.png"
+                      alt=""
+                    />
+                  </div>
+                  <p class="image-bio-p-3">Ron Gluckman</p>
+                </div>
+                <h3 class="part-2-h3">
+                  Didi Faces Cybersecurity Investigation By Seven
+                </h3>
+                <div class="image-bio-flex-1 margin-top-09">
+                  <p class="image-bio-p-1 size-12">5 min ago</p>
+                  <p class="image-bio-p-2 size-12">Political</p>
+                  <p class="image-bio-p-1 size-12">Economic</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="first-chapter-child-2">
+            <div class="div-span">
+              <span class="child-2-span">Popular Writers</span>
+            </div>
+            <div class="child-2-grid">
+              <div class="child-2-grid-boxes padding-border">
+                <div class="grid-img-size">
+                  <img
+                    class="icon-border img-size"
+                    src="./image/mitchell-luo-ymo_yC_N_2o-unsplash2x.png"
+                    alt=""
+                  />
+                </div>
+                <div class="child-2-grid-bio">
+                  <div class="grid-flex-line">
+                    <h3 class="grid-flex-line-h3">Ron Gluckman</h3>
+                    <div class="grid-flex-line-flex">
+                      <p class="grid-flex-line-p">Readed 10 000</p>
+                      <div class="arrow-div">
+                        <img
+                          class="img-size"
+                          src="./image/Untitled.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="grid-flex-p marign-top-7">
+                    The nuclear power plant was seized on day one of Russia’s
+                    invasion, and workers have not left since.
+                  </p>
+                  <p class="grid-flex-p-1 marign-top-7">Updated 27 min ago</p>
+                </div>
+              </div>
+              <div class="child-2-grid-boxes padding-border">
+                <div class="grid-img-size">
+                  <img
+                    class="icon-border img-size"
+                    src="./image/mitchell-luo-ymo_yC_N_2o-unsplash2x.png"
+                    alt=""
+                  />
+                </div>
+                <div class="child-2-grid-bio">
+                  <div class="grid-flex-line">
+                    <h3 class="grid-flex-line-h3">Ron Gluckman</h3>
+                    <div class="grid-flex-line-flex">
+                      <p class="grid-flex-line-p">Readed 10 000</p>
+                      <div class="arrow-div">
+                        <img
+                          class="img-size"
+                          src="./image/Untitled.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="grid-flex-p marign-top-7">
+                    The nuclear power plant was seized on day one of Russia’s
+                    invasion, and workers have not left since.
+                  </p>
+                  <p class="grid-flex-p-1 marign-top-7">Updated 27 min ago</p>
+                </div>
+              </div>
+              <div class="child-2-grid-boxes padding-border">
+                <div class="grid-img-size">
+                  <img
+                    class="icon-border img-size"
+                    src="./image/mitchell-luo-ymo_yC_N_2o-unsplash2x.png"
+                    alt=""
+                  />
+                </div>
+                <div class="child-2-grid-bio">
+                  <div class="grid-flex-line">
+                    <h3 class="grid-flex-line-h3">Ron Gluckman</h3>
+                    <div class="grid-flex-line-flex">
+                      <p class="grid-flex-line-p">Readed 10 000</p>
+                      <div class="arrow-div">
+                        <img
+                          class="img-size"
+                          src="./image/Untitled.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="grid-flex-p marign-top-7">
+                    The nuclear power plant was seized on day one of Russia’s
+                    invasion, and workers have not left since.
+                  </p>
+                  <p class="grid-flex-p-1 marign-top-7">Updated 27 min ago</p>
+                </div>
+              </div>
+              <div class="child-2-grid-boxes padding-border">
+                <div class="grid-img-size">
+                  <img
+                    class="icon-border img-size"
+                    src="./image/mitchell-luo-ymo_yC_N_2o-unsplash2x.png"
+                    alt=""
+                  />
+                </div>
+                <div class="child-2-grid-bio">
+                  <div class="grid-flex-line">
+                    <h3 class="grid-flex-line-h3">Ron Gluckman</h3>
+                    <div class="grid-flex-line-flex">
+                      <p class="grid-flex-line-p">Readed 10 000</p>
+                      <div class="arrow-div">
+                        <img
+                          class="img-size"
+                          src="./image/Untitled.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="grid-flex-p marign-top-7">
+                    The nuclear power plant was seized on day one of Russia’s
+                    invasion, and workers have not left since.
+                  </p>
+                  <p class="grid-flex-p-1 marign-top-7">Updated 27 min ago</p>
+                </div>
+              </div>
+              <div class="child-2-grid-boxes">
+                <div class="grid-img-size">
+                  <img
+                    class="icon-border img-size"
+                    src="./image/mitchell-luo-ymo_yC_N_2o-unsplash2x.png"
+                    alt=""
+                  />
+                </div>
+                <div class="child-2-grid-bio">
+                  <div class="grid-flex-line">
+                    <h3 class="grid-flex-line-h3">Ron Gluckman</h3>
+                    <div class="grid-flex-line-flex">
+                      <p class="grid-flex-line-p">Readed 10 000</p>
+                      <div class="arrow-div">
+                        <img
+                          class="img-size"
+                          src="./image/Untitled.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="grid-flex-p marign-top-7">
+                    The nuclear power plant was seized on day one of Russia’s
+                    invasion, and workers have not left since.
+                  </p>
+                  <p class="grid-flex-p-1 marign-top-7">Updated 27 min ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-2">
+        <h1 class="sec-2-h1">Breaking News</h1>
+        <div class="sec-2-grid">
+          <div class="section-2-boxes sec-2-box-1">
+            <h3 class="sec-2-h3">
+              Biden administration to warn businesses about risks of
+            </h3>
+            <div class="flex-line">
+              <p class="sec-2-p-1">Just now</p>
+              <p class="sec-2-p-2">Political</p>
+            </div>
+          </div>
+          <div class="section-2-boxes sec-2-box-2">
+            <h3 class="sec-2-h3">
+              Biden administration to warn businesses about risks of
+            </h3>
+            <div class="flex-line">
+              <p class="sec-2-p-1">Just now</p>
+              <p class="sec-2-p-2">Political</p>
+            </div>
+          </div>
+          <div class="section-2-boxes sec-2-box-3">
+            <h3 class="sec-2-h3">
+              Biden administration to warn businesses about risks of
+            </h3>
+            <div class="flex-line">
+              <p class="sec-2-p-1">Just now</p>
+              <p class="sec-2-p-2">Political</p>
+            </div>
+          </div>
+          <div class="section-2-boxes sec-2-box-4">
+            <h3 class="sec-2-h3">
+              Biden administration to warn businesses about risks of
+            </h3>
+            <div class="flex-line">
+              <p class="sec-2-p-1">Just now</p>
+              <p class="sec-2-p-2">Political</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-3">
+        <h3 class="sec-3-h3">Today’s Important</h3>
+        <div class="sec-3-div">
+          <div class="sec-3-childs">
+            <div class="sec-3-img">
+              <img
+                class="img-size border-rad-4"
+                src="./image/dan-schiumarini-dcL8ESbsGis-unsplash@2x.png "
+                alt=""
+              />
+            </div>
+            <div class="sec-3-bio">
+              <div class="sec-3-flex-line">
+                <div class="sec-3-flex-line-1">
+                  <div class="sec-3-icon-per">
+                    <img
+                      class="img-size icon-border"
+                      src="./image/mitchell-luo-ymo_yC_N_2o-unsplash2x.png"
+                      alt=""
+                    />
+                  </div>
+                  <span class="sec-3-p">Ron Gluckman</span>
+                </div>
+                <div>
+                  <span class="sec-3-p-1">Just now</span>
+                  <span class="sec-3-p-2">Business</span>
+                </div>
+              </div>
+              <h2 class="sec-3-h2">
+                Biden administration to warn businesses about warn businesses
+                about
+              </h2>
+              <p class="sec-2-p-3">
+                Protest against vaccine mandates paralyzing Canada capital,
+                mayor…Protest against vaccine mandates paralyzing Canada
+                capital, mayor…Protest against vaccine mandates paralyzing
+                Canada capital, mayor…Protest against vaccine mandates
+                paralyzing Canada capital, mayor…
+              </p>
+              <div class="sec-3-flex-bio">
+                <div class="sec-3-bio-child">
+                  <div class="">
+                    <p class="sec-3-bio-p">15.555</p>
+                    <p class="sec-3-bio_p">NOW READING</p>
+                  </div>
+                  <div class="sec-3--img">
+                    <img class="img-size" src="./image/speed-2.png" alt="" />
+                  </div>
+                </div>
+                <div class="sec-3-bio-child">
+                  <div class="">
+                    <p class="sec-3-bio-p">15.555</p>
+                    <p class="sec-3-bio_p">NOW READING</p>
+                  </div>
+                  <div class="sec-3---img">
+                    <img class="img-size" src="./image/speed.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sec-3-childs">
+            <div class="sec-3-img">
+              <img
+                class="img-size border-rad-4"
+                src="./image/ryan-ancill-aJYO8JmVodY-unsplash2x.png"
+                alt=""
+              />
+            </div>
+            <div class="sec-3-bio">
+              <div class="sec-3-flex-line">
+                <div class="sec-3-flex-line-1">
+                  <div class="sec-3-icon-per">
+                    <img
+                      class="img-size icon-border"
+                      src="./image/mitchell-luo-ymo_yC_N_2o-unsplash2x.png"
+                      alt=""
+                    />
+                  </div>
+                  <span class="sec-3-p">Ron Gluckman</span>
+                </div>
+                <div>
+                  <span class="sec-3-p-1">Just now</span>
+                  <span class="sec-3-p-2">Business</span>
+                </div>
+              </div>
+              <h2 class="sec-3-h2">
+                Biden administration to warn businesses about warn businesses
+                about
+              </h2>
+              <p class="sec-2-p-3">
+                Protest against vaccine mandates paralyzing Canada capital,
+                mayor…Protest against vaccine mandates paralyzing Canada
+                capital, mayor…Protest against vaccine mandates paralyzing
+                Canada capital, mayor…Protest against vaccine mandates
+                paralyzing Canada capital, mayor…
+              </p>
+              <div class="sec-3-flex-bio">
+                <div class="sec-3-bio-child">
+                  <div class="">
+                    <p class="sec-3-bio-p">15.555</p>
+                    <p class="sec-3-bio_p">NOW READING</p>
+                  </div>
+                  <div class="sec-3--img">
+                    <img
+                      class="img-size border-rad-4"
+                      src="./image/speed-2.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="sec-3-bio-child">
+                  <div class="">
+                    <p class="sec-3-bio-p">15.555</p>
+                    <p class="sec-3-bio_p">NOW READING</p>
+                  </div>
+                  <div class="sec-3---img">
+                    <img class="img-size" src="./image/speed.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
